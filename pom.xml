@@ -53,7 +53,7 @@
 	<dependency>
 		<groupId>mysql</groupId>
 		<artifactId>mysql-connector-java</artifactId>
-		<version>5.1.21</version>
+		<version>8.0.16</version>
 	</dependency>  
 	<dependency>
 		<groupId>org.hibernate</groupId>
@@ -75,9 +75,11 @@
 		<artifactId>spring-orm</artifactId>
 		<version>3.2.0.RELEASE</version>
 	</dependency>  
-	
-	
-	  
+	<dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>42.2.6</version>
+	</dependency> 
   </dependencies>
   <build>
     <finalName>FitnessTracker</finalName>

@@ -9,6 +9,8 @@
 
 
 	<context:annotation-config/>
+	<context:component-scan base-package="com.pluralsight"/>
+	
 	
 	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"></bean>
 
@@ -23,8 +25,8 @@
 		</property>
 		<property name="jpaPropertyMap">
 			<map>
-				<entry key="hibernate.dialect" value="org.hibernate.dialect.MySQLSInnoDBDialect"/>
-				<entry key="hibernate.hdm2ddl.auto" value="none"/>
+				<entry key="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+				<entry key="hibernate.hbm2ddl.auto" value="create"/>
 				<entry key="hibernate.format_sql" value="true"/>
 			</map>
 		</property>
@@ -39,7 +41,7 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://localhost:3306/fitnesstracker?autoReconnect=true"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/fitnesstracker?useTimezone=true&amp;serverTimezone=UTC"/>
 		<property name="username" value="root"/>
 		<property name="password" value="senha"/>
 	</bean>
