@@ -19,12 +19,12 @@ import org.hibernate.validator.constraints.Range;
 
 @Entity//quero que o hibernate me rastreie
 @Table(name = "goals")
-@NamedQueries({
-	@NamedQuery(name=Goal.FIND_GOAL_REPORTS, query="Select new com.pluralsight.model.GoalReport(g.minutes, e.minutes, e.activity)" + 
-			"from Goal g, Exercise e where g.id = e.goal.id"),
-	@NamedQuery(name=Goal.FIND_ALL_GOALS, query="Select g from Goal g")
-	
-})
+//@NamedQueries({
+//	@NamedQuery(name=Goal.FIND_GOAL_REPORTS, query="Select new com.pluralsight.model.GoalReport(g.minutes, e.minutes, e.activity)" + 
+//			"from Goal g, Exercise e where g.id = e.goal.id"),
+//	@NamedQuery(name=Goal.FIND_ALL_GOALS, query="Select g from Goal g")
+//	
+//})
 public class Goal {
 	
 	public static final String FIND_ALL_GOALS = "findAllGoals";
