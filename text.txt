@@ -1,0 +1,19 @@
+ Volume in drive C is Windows
+ Volume Serial Number is CC23-974D
+
+ Directory of C:\Users\GizeleCorreiaCardoso\workspace\FitnessTracker
+
+18/07/2019  13:11    <DIR>          .
+18/07/2019  13:11    <DIR>          ..
+11/07/2019  10:24             1.348 .classpath
+10/07/2019  15:42               175 .gitignore
+11/07/2019  10:24             1.451 .project
+10/07/2019  13:34    <DIR>          .settings
+10/07/2019  14:56               541 .springBeans
+12/07/2019  11:04             3.055 pom.xml
+10/07/2019  15:42               282 README.md
+10/07/2019  15:42    <DIR>          src
+10/07/2019  13:34    <DIR>          target
+18/07/2019  13:11                 0 text.txt
+               7 File(s)          6.852 bytes
+               5 Dir(s)  183.122.759.680 bytes free
